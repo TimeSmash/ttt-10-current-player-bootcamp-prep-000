@@ -8,6 +8,7 @@ def turn_count (board)
     turn = 0
     
     board.each do |cell| # cell = element
+<<<<<<< HEAD
       if cell == "X" || cell == "O"
         turn += 1
       else 
@@ -32,3 +33,14 @@ def current_player(board)
 end
     
 
+=======
+      if cell == "X" || "O"
+        turn += 1
+      else
+        turn = turn
+      end
+    end
+  return turn
+
+end
+>>>>>>> 1297f0ca72ece8441936bf1629ada2db067a12b4
